@@ -42,6 +42,16 @@ GRANT ALL PRIVILEGES ON myapp.* To 'myapp'@'localhost' IDENTIFIED BY 'password';
 
 ## LINUX
 
+### Add a new user and make give it sudo
+```
+adduser newusername
+adduser newusername sudo
+
+# Note:  Don't use useradd as it doesn't create home folder or assign a password to the user.
+# Use userdel 
+```
+
+
 ### sudo without password.  Great for DEV box.
 
 ```
