@@ -1,13 +1,18 @@
 # Notes
 
-## MySQL
+## git
 
-### Create a database and a user for the database
+### Revert to a previous Git commit
 
 ```
-# Change myapp and password
-CREATE DATABASE myapp DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-GRANT ALL PRIVILEGES ON myapp.* To 'myapp'@'localhost' IDENTIFIED BY 'password';
+# find the hash you want to revert to by looking at 
+git log
+# let's assume a867b4af366 is the state you want to revert to
+git revert --no-commit a867b4af366..HEAD
+# look at the diff to make sure everything is good to go
+git diff --staged
+# commit
+git commit
 ```
 
 ## Java
@@ -21,4 +26,14 @@ sudo find / -name 'mysql-connector*'
 # should be under these folders.  symlink to lib folders.
 /usr/share/java/mysql-connector-java.jar
 /usr/share/java/mysql-connector-java-5.1.28.jar
+```
+
+## MySQL
+
+### Create a database and a user for the database
+
+```
+# Change myapp and password
+CREATE DATABASE myapp DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+GRANT ALL PRIVILEGES ON myapp.* To 'myapp'@'localhost' IDENTIFIED BY 'password';
 ```
