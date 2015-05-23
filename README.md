@@ -1,7 +1,6 @@
 # Notes
-A collections of intructions
 
-
+But what I do have are a very particular set of notes, notes I have acquired over a very long career.
 
 ## git
 
@@ -43,13 +42,13 @@ GRANT ALL PRIVILEGES ON myapp.* To 'myapp'@'localhost' IDENTIFIED BY 'password';
 
 ## LINUX
 
-### Sudo without password
+### sudo without password.  Great for DEV box.
 
 ```
 sudo visudo
 # Add this line to the end of file: 
-username ALL = NOPASSWD : ALL
 # Change username to your username
+username ALL = NOPASSWD : ALL
 # Save and exit
 ```
 
