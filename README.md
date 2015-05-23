@@ -1,8 +1,11 @@
 # Notes
+A collections of intructions
+
+
 
 ## git
 
-### Revert to a previous Git commit
+### Revert to a previous git commit
 
 ```
 # find the hash you want to revert to by looking at 
@@ -37,3 +40,16 @@ sudo find / -name 'mysql-connector*'
 CREATE DATABASE myapp DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 GRANT ALL PRIVILEGES ON myapp.* To 'myapp'@'localhost' IDENTIFIED BY 'password';
 ```
+
+## LINUX
+
+### Sudo without password
+
+```
+sudo visudo
+# Add this line to the end of file: 
+username ALL = NOPASSWD : ALL
+# Change username to your username
+# Save and exit
+```
+
