@@ -51,6 +51,31 @@ adduser newusername sudo
 # Use userdel 
 ```
 
+### Add swap in digital ocean ubuntu instance
+
+```
+
+# Add 1 Gigabyte swap
+sudo fallocate -l 1G /swapfile
+sudo chmod 600 /swapfile
+
+# see the life
+ls -lh /swapfile
+
+# turn it on
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo swapon -s
+
+# see status
+free -m
+top
+
+# add to /etc/fstab for persistent
+sudo vi /etc/fstab
+# add to end of file
+/swapfile   none    swap    sw    0   0
+```
 
 ### sudo without password.  Great for DEV box.
 
