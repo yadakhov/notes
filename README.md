@@ -75,9 +75,16 @@ top
 sudo vi /etc/fstab
 # add to end of file
 /swapfile   none    swap    sw    0   0
+
+# swap settings
+sudo vi /etc/sysctl.conf
+# add to end of file for better server swap setting
+vm.swappiness=10
+vm.vfs_cache_pressure = 50
+
 ```
 
-### sudo without password.  Great for DEV box.
+### sudo without password.  For DEV box.
 
 ```
 sudo visudo
