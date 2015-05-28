@@ -40,10 +40,21 @@ CREATE DATABASE myapp DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 GRANT ALL PRIVILEGES ON myapp.* To 'myapp'@'localhost' IDENTIFIED BY 'password';
 ```
 
+### Created_at and updated_at timestamps
+
+```sql
+CREATE TABLE `laravel` (
+  `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+```
+
 ## LINUX
 
 ### Add a new user and make give it sudo
-```
+```bash
 adduser newusername
 adduser newusername sudo
 
@@ -53,7 +64,7 @@ adduser newusername sudo
 
 ### Add swap in digital ocean ubuntu instance
 
-```
+```bash
 
 # Add 1 Gigabyte swap
 sudo fallocate -l 1G /swapfile
