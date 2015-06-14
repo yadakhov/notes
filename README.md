@@ -1,6 +1,6 @@
 # Notes
 
-But what I do have are a very particular set of notes, notes I have acquired over a very long career.
+![Notes](http://i.imgur.com/xeiFk9Z.jpg)
 
 ## git
 
