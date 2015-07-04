@@ -1,6 +1,6 @@
 # Notes
 
-![Notes](http://i.imgur.com/xeiFk9Z.jpg)
+![Notes](http://i.imgur.com/RzbnCFM.jpg)
 
 ## git
 
