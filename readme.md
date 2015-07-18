@@ -105,3 +105,15 @@ username ALL = NOPASSWD : ALL
 # Save and exit
 ```
 
+### Install nodejs on Ubuntu LTS
+
+```
+sudo apt-get install -y python-software-properties python g++ make
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+
+Note: you don't need to install npm
+npm -v
+node -v
+```
