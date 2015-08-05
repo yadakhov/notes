@@ -117,3 +117,13 @@ Note: you don't need to install npm
 npm -v
 node -v
 ```
+
+### Server Permission
+
+```
+# for nginx which uses php5-fpm
+sudo vi /etc/php5/fpm/pool.d/www.conf
+
+# find user = www-data
+# Change the value for user and group to your username
+```
