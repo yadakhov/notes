@@ -127,3 +127,21 @@ sudo vi /etc/php5/fpm/pool.d/www.conf
 # find user = www-data
 # Change the value for user and group to your username
 ```
+
+### Laravel Cache
+
+```php
+$cache = "standings($year,$week)";
+
+if (\Request::exists('nocache') || !env('CACHE')) {
+    // Do nothing
+} elseif (Cache::has($cache) && !Auth::check()) {
+    return Cache::get($cache);
+}
+
+... slow code
+
+$view = view('page', $data)->render();
+
+Cache::put($cache, $view, 60);
+```
