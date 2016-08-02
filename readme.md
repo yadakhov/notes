@@ -196,3 +196,9 @@ sudo add-apt-repository ppa:atareao/atareao
 sudo apt-get update
 sudo apt-get install touchpad-indicator
 ```
+
+### get the develop branch of laravel
+
+```
+composer create-project laravel/laravel newproject dev-develop
+```
