@@ -40,6 +40,12 @@ CREATE DATABASE myapp DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 GRANT ALL PRIVILEGES ON myapp.* To 'myapp'@'localhost' IDENTIFIED BY 'password';
 ```
 
+```
+# For homestaed
+CREATE DATABASE myapp DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+GRANT ALL PRIVILEGES ON myapp.* To 'homestead'@'localhost' IDENTIFIED BY 'secret';
+```
+
 ### Created_at and updated_at timestamps
 
 ```sql
