@@ -313,3 +313,11 @@ sudo apt-get install touchpad-indicator
 ```
 composer create-project laravel/laravel newproject dev-develop
 ```
+
+### copy ssh public key to a remote server
+
+http://www.cyberciti.biz/faq/install-ssh-identity-key-remote-host/
+
+```
+ssh-copy-id username@remoteserver.com
+```
