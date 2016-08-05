@@ -238,6 +238,68 @@ server {
 }
 ```
 
+After letsencrypt
+
+```
+server {
+    server_name citypulses.com www.citypulses.com;
+    return 301 https://citypulses.com$request_uri;
+}
+server {
+    listen 443;
+    ssl on;
+    ssl_certificate /etc/letsencrypt/live/citypulses.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/citypulses.com/privkey.pem;
+    server_name www.citypulses.com;
+    return 301 https://citypulses.com$request_uri;
+}
+server {
+    listen 443;
+    server_name citypulses.com;
+    root "/var/www/html/citypulses/public";
+
+    index index.html index.htm index.php;
+
+    charset utf-8;
+
+    # cache
+    location ~* \.(?:ico|css|js|gif|jpe?g|png)$ {
+        expires 30d;
+        add_header Vary Accept-Encoding;
+        access_log off;
+    }
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    access_log /var/log/nginx/citypulses.com-ssl-access.log;
+    error_log  /var/log/nginx/citypulses.com-ssl-error.log error;
+
+    sendfile off;
+
+    client_max_body_size 100m;
+
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_intercept_errors off;
+        fastcgi_buffer_size 16k;
+        fastcgi_buffers 4 16k;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+```
+
 ### Disable touchpad on the thinkpad
 
 ```
