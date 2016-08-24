@@ -321,3 +321,11 @@ http://www.cyberciti.biz/faq/install-ssh-identity-key-remote-host/
 ```
 ssh-copy-id username@remoteserver.com
 ```
+
+### install composer globaly
+
+```
+sudo apt-get install curl php
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+```
