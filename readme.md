@@ -336,3 +336,13 @@ sudo mv composer.phar /usr/local/bin/composer
 sudo apt-get install letsencrypt
 sudo letsencrypt certonly -a webroot --webroot-path=/var/www/html/rotna/public -d rotna.ca -d www.rotna.ca
 ```
+
+### Tar and Untar
+
+```
+# tar
+tar cvzf archive_name.tar.gz dirname/
+
+# untar
+tar xvfz archive_name.tar.gz
+```
