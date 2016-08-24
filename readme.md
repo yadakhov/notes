@@ -329,3 +329,10 @@ sudo apt-get install curl php
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 ```
+
+### Install letsencrypt
+
+```
+sudo apt-get install letsencrypt
+sudo letsencrypt certonly -a webroot --webroot-path=/var/www/html/rotna/public -d rotna.ca -d www.rotna.ca
+```
