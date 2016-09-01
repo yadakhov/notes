@@ -346,3 +346,9 @@ tar cvzf archive_name.tar.gz dirname/
 # untar
 tar xvfz archive_name.tar.gz
 ```
+
+### Set debian/ubuntu default editor
+
+```
+sudo update-alternatives --config editor
+```
