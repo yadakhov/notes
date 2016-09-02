@@ -352,3 +352,13 @@ tar xvfz archive_name.tar.gz
 ```
 sudo update-alternatives --config editor
 ```
+
+### crontab for letsencrypt
+
+```
+# 12:10am on the first day of the month.
+10 0 1 * * sudo letsencrypt renew >> /var/log/letsencrypt-renew.log
+
+# 12:15am on the first day of the month.
+15 0 1 * * sudo service nginx reload
+```
