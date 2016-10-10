@@ -362,3 +362,12 @@ sudo update-alternatives --config editor
 # 12:15am on the first day of the month.
 15 0 1 * * sudo service nginx reload
 ```
+
+# Git config
+
+```
+git config --global user.email "yada.khov@myemail.com"
+git config --global user.name "Yada Khov"
+git config --global core.editor vim
+git config --global push.default simple
+```
