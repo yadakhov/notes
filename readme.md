@@ -371,3 +371,13 @@ git config --global user.name "Yada Khov"
 git config --global core.editor vim
 git config --global push.default simple
 ```
+
+# .bashrc
+
+```
+alias art='php artisan'
+alias cc='cd ~/Code;ls -lah
+```
+
+
+```
