@@ -383,4 +383,26 @@ alias cc='cd ~/Code;ls -lah
 
 ```
 sudo apt-get install nginx-extras
+
+# in the nginx conf file
+
+    more_set_headers 'Access-Control-Allow-Origin: $http_origin';
+    more_set_headers 'Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE, HEAD';
+    more_set_headers 'Access-Control-Allow-Credentials: true';
+    more_set_headers 'Access-Control-Allow-Headers: Origin,Content-Type,Accept,Authorization';
+
+    location / {
+        if ($request_method = 'OPTIONS') {
+            more_set_headers 'Access-Control-Allow-Origin: $http_origin';
+            more_set_headers 'Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE, HEAD';
+            more_set_headers 'Access-Control-Max-Age: 1728000';
+            more_set_headers 'Access-Control-Allow-Credentials: true';
+            more_set_headers 'Access-Control-Allow-Headers: Origin,Content-Type,Accept,Authorization';
+            more_set_headers 'Content-Type: text/plain; charset=UTF-8';
+            more_set_headers 'Content-Length: 0';
+            return 204;
+        }
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
 ```
