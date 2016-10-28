@@ -379,5 +379,8 @@ alias art='php artisan'
 alias cc='cd ~/Code;ls -lah
 ```
 
+# Enable CORS on nginx
 
+```
+sudo apt-get install nginx-extras
 ```
