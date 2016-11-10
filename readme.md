@@ -366,7 +366,7 @@ sudo update-alternatives --config editor
 # Git config
 
 ```
-git config --global user.email "yada.khov@myemail.com"
+git config --global user.email "yada.khov@gmail.com"
 git config --global user.name "Yada Khov"
 git config --global core.editor vim
 git config --global push.default simple
