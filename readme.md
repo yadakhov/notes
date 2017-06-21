@@ -378,3 +378,13 @@ sudo apt-get install nginx-extras
     }
 
 ```
+
+# Death Adder mouse on linux. Fix sensitivity problem.
+
+```
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt update
+sudo apt install razercfg qrazercfg
+
+sudo apt install qrazercfg-applet
+```
