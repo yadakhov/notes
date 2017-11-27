@@ -388,3 +388,13 @@ sudo apt install razercfg qrazercfg
 
 sudo apt install qrazercfg-applet
 ```
+
+## install ethereum on ubuntu
+
+```
+sudo apt-get install software-properties-common
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install ethereum
+
+```
