@@ -398,3 +398,11 @@ sudo apt-get update
 sudo apt-get install ethereum
 
 ```
+
+## supervisor
+
+```
+sudo supervisorctl reread
+sudo supervisorctl update
+sudo supervisorctl start all
+```
