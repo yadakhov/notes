@@ -76,11 +76,21 @@ CREATE TABLE `laravel` (
 
 ### Add a new user and make give it sudo
 ```bash
-adduser newusername
+
+
+newusername
 adduser newusername sudo
 
 # Note:  Don't use useradd as it doesn't create home folder or assign a password to the user.
 # Use userdel 
+```
+
+### Copy root authorized_keys to a new user
+
+```
+root@box:~# mkdir /home/yada/.ssh
+root@box:~# cp ~/.ssh/authorized_keys /home/yada/.ssh
+root@box:~# chown yada:yada -R /home/yada/.ssh
 ```
 
 ### Add swap in digital ocean ubuntu instance
