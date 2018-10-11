@@ -240,7 +240,7 @@ server {
     location = /favicon.ico { access_log off; log_not_found off; }
     location = /robots.txt  { access_log off; log_not_found off; }
 
-    access_log /var/log/nginx/supercontest.test-access.log error;
+    access_log /var/log/nginx/supercontest.test-access.log;
     error_log  /var/log/nginx/supercontest.test-error.log error;
 
     sendfile off;
