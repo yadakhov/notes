@@ -225,8 +225,8 @@ server {
 ```
 server {
     listen 80;
-    server_name .supercontest.test;
-    root "/home/vagrant/supercontest/public";
+    server_name supercontest.test;
+    root "/var/www/html/supercontest/public";
 
     index index.html index.htm index.php;
 
