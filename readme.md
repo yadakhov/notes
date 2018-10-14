@@ -465,3 +465,11 @@ sudo supervisorctl reread
 sudo supervisorctl update
 sudo supervisorctl start all
 ```
+
+## install acestream for ubuntu
+
+```
+sudo apt-get install snap snapd
+sudo snap install acestreamplayer
+snap run acestreamplayer
+```
