@@ -473,3 +473,12 @@ sudo apt-get install snap snapd
 sudo snap install acestreamplayer
 snap run acestreamplayer
 ```
+
+## Fix java label problem
+
+```
+E: Repository 'http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease' changed its 'Label' value from 'Oracle Java (JDK) 8 / 9 Installer PPA' to 'Oracle Java (JDK) 8 Installer PPA' 
+N: This must be accepted explicitly before updates for this repository can be applied. See apt-secure(8) manpage for details.
+
+sudo apt-get --allow-releaseinfo-change update
+```
