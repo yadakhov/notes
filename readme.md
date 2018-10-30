@@ -482,3 +482,15 @@ N: This must be accepted explicitly before updates for this repository can be ap
 
 sudo apt-get --allow-releaseinfo-change update
 ```
+
+### Ubuntu 18.04 LEMP
+
+```
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install nginx
+sudo apt-get install mysql-server
+sudo apt-get install php7.2 php-fpm php-mysql
+sudo apt-get install composer
+sudo apt-get install php7.2-cgi php7.2-cli php7.2-common php7.2-curl php7.2-dev php7.2-gd php7.2-gmp php7.2-json php7.2-ldap php7.2-mysql php7.2-odbc php7.2-opcache php7.2-pgsql php7.2-pspell php7.2-readline php7.2-recode php7.2-snmp php7.2-sqlite3 php7.2-tidy php7.2-xml php7.2-xmlrpc php7.1-mapi php7.2-bcmath php7.2-bz2 php7.2-dba php7.2-enchant php7.2-fpm php7.2-interbase php7.2-intl php7.2-mbstring php7.2-phpdbg php7.2-soap php7.2-sybase php7.2-xsl php7.2-zip
+sudo apt-get install redis-server
+```
