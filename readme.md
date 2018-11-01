@@ -1,4 +1,4 @@
-# Notes
+s# Notes
 
 ![Notes](http://i.imgur.com/RzbnCFM.jpg)
 
@@ -225,7 +225,7 @@ server {
 ```
 server {
     listen 80;
-    server_name supercontest.test;
+    server_name supercontest.com www.supercontest.com;
     root "/var/www/html/supercontest/public";
 
     index index.html index.htm index.php;
@@ -433,6 +433,11 @@ sudo mv composer.phar /usr/local/bin/composer
 ```
 sudo apt-get install letsencrypt
 sudo letsencrypt certonly -a webroot --webroot-path=/var/www/html/rotna/public -d rotna.ca -d www.rotna.ca
+```
+
+```
+sudo letsencrypt certonly -a webroot --webroot-path=/var/www/html/skymaxlab/public -d skymaxlab.com -d www.skymaxlab.com \
+    --webroot-path=/var/www/html/jsonprettyprint/public -d jsonprettyprint.org -d www.jsonprettyprint.org
 ```
 
 ### Tar and Untar
