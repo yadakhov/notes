@@ -475,6 +475,31 @@ git config --global core.editor vim
 git config --global push.default simple
 ```
 
+# Global .gitignore
+
+```
+vi  ~/.gitignore_global 
+
+---
+# General
+._*
+.AppleDouble
+.DS_Store
+.DS_Store?
+.LSOverride
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IntelliJ
+.idea
+---
+
+git config --global core.excludesfile ~/.gitignore_global 
+```
+
+
 # .bashrc
 
 ```
