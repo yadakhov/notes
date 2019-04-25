@@ -351,6 +351,13 @@ tar xvfz archive_name.tar.gz
 sudo update-alternatives --config editor
 ```
 
+### Set default java
+
+```
+sudo update-alternatives --config java
+```
+
+
 ### crontab for letsencrypt
 
 ```
