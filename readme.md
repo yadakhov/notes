@@ -17,6 +17,20 @@ git diff --staged
 git commit
 ```
 
+### Squashing commits
+
+```
+* Make sure your branch is up to date with the master branch.
+* Run `git rebase -i master`.
+* You should see a list of commits, each commit starting with the word "pick".
+* Make sure the first commit says "pick" and change the rest from "pick" to "squash".
+-- This will squash each commit into the previous commit, which will continue until every commit is squashed into the first commit.
+* Save and close the editor.
+* It will give you the opportunity to change the commit message. 
+* Save and close the editor again.
+* Then you have to force push the final, squashed commit: `git push -f`.
+```
+
 ## Java
 
 ### Install MySQL conntector without going to Oracle website
