@@ -31,6 +31,24 @@ git commit
 * Then you have to force push the final, squashed commit: `git push -f`.
 ```
 
+## GO
+
+### bashrc
+
+```
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+```
+
+### gomon
+
+for watching file changes
+
+```
+go get -u github.com/c9s/gomon
+gomon -- go run main.go 
+```
+
 ## Java
 
 ### Install MySQL conntector without going to Oracle website
