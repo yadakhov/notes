@@ -31,6 +31,11 @@ git commit
 * Then you have to force push the final, squashed commit: `git push -f`.
 ```
 
+### using another ssh key
+
+GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa_MY_OTHER_KEY -F /dev/null" git clone git@github.com:yadakhov/project.git
+git config core.sshCommand "ssh -i ~/.ssh/id_rsa_MY_OTHER_KEY -F /dev/null"
+
 ## GO
 
 ### bashrc
