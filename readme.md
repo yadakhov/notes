@@ -537,3 +537,12 @@ php7.2-cli        php7.2-fpm        php7.2-json       php7.2-pgsql      php7.2-s
 php7.2-common     php7.2-gd         php7.2-ldap       php7.2-phpdbg     php7.2-sqlite3    php7.2-zip
 sudo apt-get install redis-server
 ```
+
+### sshfs
+
+Mount a remote folder to local folder through ssh
+
+```
+sudo sshfs -o allow_other,defer_permissions bookielab@fantasysupercontest.com:/home/bookielab ~/mnt/supercontest
+sudo umount ~/mnt/supercontest
+```
