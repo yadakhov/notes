@@ -89,6 +89,12 @@ CREATE DATABASE myapp DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 GRANT ALL PRIVILEGES ON myapp.* To 'homestead'@'localhost' IDENTIFIED BY 'secret';
 ```
 
+```
+MySQL 5.8 and above
+CREATE USER 'homestead'@'localhost' IDENTIFIED BY 'secret';
+GRANT ALL PRIVILEGES ON *.* TO 'homestead'@'localhost' WITH GRANT OPTION;
+```
+
 ### Created_at and updated_at timestamps
 
 ```sql
