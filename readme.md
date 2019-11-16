@@ -423,6 +423,15 @@ git config --global core.excludesfile ~/.gitignore_global
 vi  ~/.gitignore_global 
 ```
 
+## Git local reposity config
+
+```
+cd ~/code/yourrepo
+git config user.name "Yada Khov"
+git config user.email "ykhov@ford.com"
+git config --list --show-orig
+```
+
 # Global .gitignore
 
 ```
