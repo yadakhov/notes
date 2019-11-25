@@ -561,3 +561,9 @@ Mount a remote folder to local folder through ssh
 sudo sshfs -o allow_other,defer_permissions bookielab@fantasysupercontest.com:/home/bookielab ~/mnt/supercontest
 sudo umount ~/mnt/supercontest
 ```
+
+### Jupyter Notebook tunneling
+
+ssh -L 8888:localhost:8888 yada@yada.page
+
+      
