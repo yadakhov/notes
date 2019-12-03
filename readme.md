@@ -568,3 +568,9 @@ sudo umount ~/mnt/supercontest
 ssh -L 8888:localhost:8888 yada@yada.page
 ```
       
+### Run Pyton file on save
+
+```
+npm i -g nodemon
+nodemon yourfile.py
+```
