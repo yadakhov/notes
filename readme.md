@@ -574,3 +574,19 @@ ssh -L 8888:localhost:8888 yada@yada.page
 npm i -g nodemon
 nodemon yourfile.py
 ```
+
+### Adding identity to keychain so you don't have to type pass phrase
+
+```
+1. ssh-add -K ~/.ssh/id_rsa
+Note: change the path to where your id_rsa key is located.
+
+2. ssh-add -A
+
+3. Add to ~/.ssh/config file:
+
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
+```
