@@ -93,6 +93,7 @@ GRANT ALL PRIVILEGES ON myapp.* To 'homestead'@'localhost' IDENTIFIED BY 'secret
 MySQL 5.8 and above
 CREATE USER 'homestead'@'localhost' IDENTIFIED BY 'secret';
 GRANT ALL PRIVILEGES ON *.* TO 'homestead'@'localhost' WITH GRANT OPTION;
+GRANT PROCESS ON *.* TO homestead@localhost;
 ```
 
 ### Created_at and updated_at timestamps
