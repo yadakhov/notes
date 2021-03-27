@@ -421,7 +421,11 @@ git config --global core.editor vim
 git config --global push.default simple
 touch  ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
-vi  ~/.gitignore_global 
+vi  ~/.gitignore_global
+
+git config --global http.postBuffer 500M
+git config --global http.maxRequestBuffer 100M
+git config --global core.compression 0
 ```
 
 ## Git local reposity config
