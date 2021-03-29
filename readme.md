@@ -250,7 +250,7 @@ server {
 
     location ~ \.php$ {
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
-        fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
         fastcgi_index index.php;
         include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
@@ -278,8 +278,7 @@ server {
     return 301 https://skymaxlab.com$request_uri;
 }
 server {
-    listen 443;
-    ssl on;
+    listen 443 ssl;
     ssl_certificate /etc/letsencrypt/live/skymaxlab.com/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/skymaxlab.com/privkey.pem;
     server_name www.skymaxlab.com;
@@ -317,7 +316,7 @@ server {
 
     location ~ \.php$ {
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
-        fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
         fastcgi_index index.php;
         include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
@@ -561,6 +560,10 @@ sudo apt-get install redis-server
 ### Ubuntu 20.04 LEMP
 
 ```
+
+# remove apache2.  It will try to compete with port 80
+sudo apt-get remove apache2
+
 sudo apt-get install nginx 
 
 sudo apt-get install mysql-server 
