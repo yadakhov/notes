@@ -580,6 +580,27 @@ php7.4-cli        php7.4-enchant    php7.4-interbase  php7.4-mysql      php7.4-p
 ```
 
 
+### Password protect a nginx directory 
+
+```
+# create new username bitcoin
+sudo sh -c "echo -n 'bitcoin:' >> /etc/nginx/.htpasswd"
+
+# enter the paassword
+sudo sh -c "openssl passwd -apr1 >> /etc/nginx/.htpasswd"
+
+# look at the password
+cat /etc/nginx/.htpasswd
+
+
+# add the following in nginx config file
+location / {
+    try_files $uri $uri/ =404;
+    auth_basic "Restricted Content";
+    auth_basic_user_file /etc/nginx/.htpasswd;
+}
+```
+
 ### sshfs
 
 Mount a remote folder to local folder through ssh
