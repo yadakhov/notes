@@ -418,6 +418,7 @@ git config --global user.email "yada.khov@gmail.com"
 git config --global user.name "Yada Khov"
 git config --global core.editor vim
 git config --global push.default simple
+git config --global init.defaultBranch master
 touch  ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 vi  ~/.gitignore_global
