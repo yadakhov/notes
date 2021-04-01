@@ -437,6 +437,29 @@ git config user.email "ykhov@ford.com"
 git config --list --show-orig
 ```
 
+### Git aliases
+
+```
+# list all global configs
+git config --global alias.conf 'config --global -l'
+
+# log one liners
+git config --global alias.ll 'log --oneline'
+
+# see last git ommit
+git config --global alias.last 'log -1 HEAD --stat'
+
+# turn on auto correct
+git config --global help.autocorrect 20
+
+# similar to svn
+git config --global alias.p 'push'
+git config --global alias.co 'checkout'
+git config --global alias.st 'status -sb'
+git config --global alias.cm 'commit -m'
+git config --global alias.d 'diff'
+```
+
 # Global .gitignore
 
 ```
