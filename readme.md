@@ -91,9 +91,10 @@ GRANT ALL PRIVILEGES ON myapp.* To 'homestead'@'localhost' IDENTIFIED BY 'secret
 
 ```
 MySQL 5.8 and above
-CREATE USER 'homestead'@'localhost' IDENTIFIED BY 'secret';
-GRANT ALL PRIVILEGES ON *.* TO 'homestead'@'localhost' WITH GRANT OPTION;
-GRANT PROCESS ON *.* TO homestead@localhost;
+CREATE DATABASE betdata DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+CREATE USER 'betdata'@'localhost' IDENTIFIED BY 'h8!9TA7Fy%E*';
+GRANT ALL PRIVILEGES ON betdata.* TO 'betdata'@'localhost' WITH GRANT OPTION;
+GRANT PROCESS ON *.* TO betdata@localhost;
 ```
 
 ### Created_at and updated_at timestamps
