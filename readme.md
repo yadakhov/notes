@@ -420,27 +420,7 @@ git config --global user.name "Yada Khov"
 git config --global core.editor vim
 git config --global push.default simple
 git config --global init.defaultBranch master
-touch  ~/.gitignore_global
-git config --global core.excludesfile ~/.gitignore_global
-vi  ~/.gitignore_global
 
-git config --global http.postBuffer 500M
-git config --global http.maxRequestBuffer 100M
-git config --global core.compression 0
-```
-
-## Git local reposity config
-
-```
-cd ~/code/yourrepo
-git config user.name "Yada Khov"
-git config user.email "ykhov@ford.com"
-git config --list --show-orig
-```
-
-### Git aliases
-
-```
 # list all global configs
 git config --global alias.conf 'config --global -l'
 
@@ -459,7 +439,26 @@ git config --global alias.co 'checkout'
 git config --global alias.st 'status -sb'
 git config --global alias.cm 'commit -m'
 git config --global alias.d 'diff'
+
+
+touch  ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+vi  ~/.gitignore_global
+
+git config --global http.postBuffer 500M
+git config --global http.maxRequestBuffer 100M
+git config --global core.compression 0
 ```
+
+## Git local reposity config
+
+```
+cd ~/code/yourrepo
+git config user.name "Yada Khov"
+git config user.email "ykhov@ford.com"
+git config --list --show-orig
+```
+
 
 # Global .gitignore
 
