@@ -405,6 +405,14 @@ sudo update-alternatives --config java
 ### crontab for letsencrypt
 
 ```
+sudo su
+crontab -e
+
+# Renew monthly 
+0 0 1 * * certbot renew --post-hook "systemctl reload nginx"
+```
+
+```
 # 12:10am on the first day of the month.
 10 0 1 * * sudo letsencrypt renew >> /var/log/letsencrypt-renew.log
 
