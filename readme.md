@@ -31,6 +31,16 @@ git commit
 * Then you have to force push the final, squashed commit: `git push -f`.
 ```
 
+### Squash all commits as 1 commit before PR into develop branch. 
+
+```
+git checkout your-feature-branch
+git reset $(git merge-base develop $(git branch --show-current))
+git add .
+git commit -m "One commit message for all the changes"
+git push -f
+```
+
 ### using another ssh key
 
 GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa_MY_OTHER_KEY -F /dev/null" git clone git@github.com:yadakhov/project.git
