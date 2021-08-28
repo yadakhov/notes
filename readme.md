@@ -37,7 +37,8 @@ git commit
 git checkout your-feature-branch
 git reset $(git merge-base develop $(git branch --show-current))
 git add .
-git commit -m "One commit message for all the changes"
+# just one mesasge for all the changes
+git commit
 git push -f
 ```
 
