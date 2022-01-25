@@ -623,6 +623,46 @@ php7.4-cgi        php7.4-dev        php7.4-imap       php7.4-mbstring   php7.4-p
 php7.4-cli        php7.4-enchant    php7.4-interbase  php7.4-mysql      php7.4-pspell     php7.4-sybase     php7.4-zip
 ```
 
+### php8.0
+
+```
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install nginx
+sudo apt-get install mysql-server
+sudo apt-get install php php-fpm php-mysql
+sudo apt-get install composer
+sudo apt-get install redis-server
+sudo apt-get install \
+php8.0 \
+php8.0-bcmath \
+php8.0-bz2 \
+php8.0-cgi \
+php8.0-cli \
+php8.0-common \
+php8.0-curl \
+php8.0-dba \
+php8.0-dev \
+php8.0-enchant \
+php8.0-fpm \
+php8.0-gd \
+php8.0-gmp \
+php8.0-imap \
+php8.0-interbase \
+php8.0-intl \
+php8.0-mbstring \
+php8.0-mysql \
+php8.0-odbc \
+php8.0-opcache \
+php8.0-pgsql \
+php8.0-phpdbg \
+php8.0-pspell \
+php8.0-readline \
+php8.0-sqlite3 \
+php8.0-tidy \
+php8.0-xml \
+php8.0-xsl \
+php8.0-zip
+```
 
 ### Password protect a nginx directory 
 
