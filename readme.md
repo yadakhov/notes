@@ -590,6 +590,7 @@ sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install nginx
 sudo apt-get install mysql-server
 sudo apt-get install php7.2 php-fpm php-mysql
+sudo apt-get install php-redis
 sudo apt-get install composer
 sudo apt-get install \
 php7.2            php7.2-curl       php7.2-gmp        php7.2-mbstring   php7.2-pspell     php7.2-sybase \
