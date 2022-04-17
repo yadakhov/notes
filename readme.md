@@ -723,3 +723,10 @@ Host *
   AddKeysToAgent yes
   IdentityFile ~/.ssh/id_rsa
 ```
+
+### Add to PATH
+
+```
+export PATH="/home/yada/dogecoin/bin:$PATH"
+export PATH="/home/yada/bitcoin/bin:$PATH"
+```
