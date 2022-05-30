@@ -453,6 +453,8 @@ git config --global alias.last 'log -1 HEAD --stat'
 # turn on auto correct
 git config --global help.autocorrect 20
 
+git config --global alias.ca 'commit --amend'
+
 # similar to svn
 git config --global alias.p 'push'
 git config --global alias.co 'checkout'
