@@ -1,1 +1,6 @@
-/Users/yada/Library/Application Support/JetBrains/PhpStorm2022.2/keymaps/VSCode_yada.xml
+<keymap version="1" name="VSCode_yada" parent="VSCode OSX">
+  <action id="Console.Jdbc.Execute">
+    <keyboard-shortcut first-keystroke="meta r" />
+  </action>
+  <action id="Refresh" />
+</keymap>
