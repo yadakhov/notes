@@ -2,5 +2,13 @@
   <action id="Console.Jdbc.Execute">
     <keyboard-shortcut first-keystroke="meta r" />
   </action>
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="f3" />
+    <keyboard-shortcut first-keystroke="meta k" second-keystroke="meta d" />
+  </action>
+  <action id="GotoLine">
+    <keyboard-shortcut first-keystroke="ctrl g" />
+    <keyboard-shortcut first-keystroke="meta g" />
+  </action>
   <action id="Refresh" />
 </keymap>
