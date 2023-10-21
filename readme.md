@@ -67,7 +67,7 @@ gomon -- go run main.go
 
 ## Java
 
-### Install MySQL conntector without going to Oracle website
+### Install MySQL connector without going to Oracle website
 
 ```
 sudo apt-get install libmysql-java
@@ -132,7 +132,7 @@ CREATE TABLE `laravel` (
 
 ### Add a new user and make give it sudo
 ```bash
-# create a new linux uer
+# create a new linux user
 adduser newusername
 
 # give sudo
@@ -614,7 +614,6 @@ sudo apt-get install redis-server
 ### Ubuntu 20.04 LEMP
 
 ```
-
 # remove apache2.  It will try to compete with port 80
 sudo apt-get remove apache2
 
@@ -710,7 +709,7 @@ sudo umount ~/mnt/supercontest
 ssh -L 8888:localhost:8888 yada@yada.page
 ```
       
-### Run Pyton file on save
+### Run Python file on save
 
 ```
 npm i -g nodemon
@@ -739,3 +738,4 @@ Host *
 export PATH="/home/yada/dogecoin/bin:$PATH"
 export PATH="/home/yada/bitcoin/bin:$PATH"
 ```
+
